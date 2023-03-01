@@ -1,0 +1,1 @@
+INSERT INTO TB_USER VALUES (1, 'test@test.com', '$2a$04$os6cXWdR59qfpkEj72Cc0uMJGKMX8s8mBS0TMOCIybNVTQjDTcHsi')
