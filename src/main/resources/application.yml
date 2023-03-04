@@ -4,6 +4,7 @@ spring:
     url: jdbc:h2:~/test;AUTO_SERVER=TRUE
     username: sa
     password:
+
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -14,27 +15,24 @@ spring:
       hibernate:
         show_sql: true
         format_sql: true
+
   sql:
     init:
       mode: always
+
   h2:
     console:
       enabled: true
-      path: /h2-console
       settings:
         web-allow-others: true
-  allowed:
-    resources: /h2-console/**
 
   devtools:
     livereload:
       enabled: true
-  resources:
-    static-locations:
-      file: src/main/resources/static/
+    restart:
+      enabled: true
   thymeleaf:
     cache: false
-    prefix: file:src/main/resources/templates/
 
 server:
   servlet:

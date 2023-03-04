@@ -1,31 +1,32 @@
 package com.seogineer.sessionauthspringsecuritythymleaf.config;
 
-import com.seogineer.sessionauthspringsecuritythymleaf.user.User;
-import com.seogineer.sessionauthspringsecuritythymleaf.user.UserRepository;
+import com.seogineer.sessionauthspringsecuritythymleaf.member.domain.Member;
+import com.seogineer.sessionauthspringsecuritythymleaf.member.domain.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.Optional;
 
 @Slf4j
 @Service
 @RequiredArgsConstructor
 public class UserDetailsServiceImpl implements UserDetailsService {
-    private final UserRepository userRepository;
+    private final MemberRepository memberRepository;
 
     @Override
-    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        Optional<User> findUser = userRepository.findByEmail(email);
-        if (findUser.isEmpty()) throw new UsernameNotFoundException("존재하지 않는 email 입니다.");
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Optional<Member> findMember = memberRepository.findByUsername(username);
+        if (findMember.isEmpty()) throw new UsernameNotFoundException("존재하지 않는 username 입니다.");
 
-        log.info("loadUserByUsername member.username = {}", email);
+        log.info("loadUserByUsername member.username = {}", username);
 
-        User user = findUser.get();
-        return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(), new ArrayList<>());
+        Member member = findMember.get();
+        return new User(member.getUsername(), member.getPassword(), AuthorityUtils.createAuthorityList(member.getRole().toString()));
     }
 }
