@@ -1,4 +1,4 @@
-package com.seogineer.sessionauthspringsecuritythymleaf;
+package com.seogineer.sessionauthspringsecuritythymeleaf;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;

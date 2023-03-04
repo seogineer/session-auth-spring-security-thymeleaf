@@ -1,4 +1,4 @@
-package com.seogineer.sessionauthspringsecuritythymleaf.config;
+package com.seogineer.sessionauthspringsecuritythymeleaf.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

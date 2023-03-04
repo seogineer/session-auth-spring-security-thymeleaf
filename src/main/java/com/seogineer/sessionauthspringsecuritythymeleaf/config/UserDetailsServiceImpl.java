@@ -1,7 +1,7 @@
-package com.seogineer.sessionauthspringsecuritythymleaf.config;
+package com.seogineer.sessionauthspringsecuritythymeleaf.config;
 
-import com.seogineer.sessionauthspringsecuritythymleaf.member.domain.Member;
-import com.seogineer.sessionauthspringsecuritythymleaf.member.domain.MemberRepository;
+import com.seogineer.sessionauthspringsecuritythymeleaf.member.domain.Member;
+import com.seogineer.sessionauthspringsecuritythymeleaf.member.domain.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.authority.AuthorityUtils;

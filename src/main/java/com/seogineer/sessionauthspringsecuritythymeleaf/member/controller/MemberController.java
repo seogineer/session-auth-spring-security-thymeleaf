@@ -1,9 +1,9 @@
-package com.seogineer.sessionauthspringsecuritythymleaf.member.controller;
+package com.seogineer.sessionauthspringsecuritythymeleaf.member.controller;
 
-import com.seogineer.sessionauthspringsecuritythymleaf.member.domain.Member;
-import com.seogineer.sessionauthspringsecuritythymleaf.member.domain.MemberRepository;
-import com.seogineer.sessionauthspringsecuritythymleaf.member.domain.Role;
-import com.seogineer.sessionauthspringsecuritythymleaf.member.dto.RegistryRequest;
+import com.seogineer.sessionauthspringsecuritythymeleaf.member.domain.Member;
+import com.seogineer.sessionauthspringsecuritythymeleaf.member.domain.MemberRepository;
+import com.seogineer.sessionauthspringsecuritythymeleaf.member.domain.Role;
+import com.seogineer.sessionauthspringsecuritythymeleaf.member.dto.RegistryRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

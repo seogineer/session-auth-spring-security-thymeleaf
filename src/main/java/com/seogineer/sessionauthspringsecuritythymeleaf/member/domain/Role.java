@@ -1,4 +1,4 @@
-package com.seogineer.sessionauthspringsecuritythymleaf.member.domain;
+package com.seogineer.sessionauthspringsecuritythymeleaf.member.domain;
 
 public enum Role {
     ROLE_ADMIN("관리자"),

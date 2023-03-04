@@ -1,4 +1,4 @@
-package com.seogineer.sessionauthspringsecuritythymleaf.member.domain;
+package com.seogineer.sessionauthspringsecuritythymeleaf.member.domain;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;

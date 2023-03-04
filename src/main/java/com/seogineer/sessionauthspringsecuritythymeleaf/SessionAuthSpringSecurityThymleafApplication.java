@@ -1,4 +1,4 @@
-package com.seogineer.sessionauthspringsecuritythymleaf;
+package com.seogineer.sessionauthspringsecuritythymeleaf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

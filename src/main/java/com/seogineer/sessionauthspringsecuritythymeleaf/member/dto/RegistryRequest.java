@@ -1,6 +1,6 @@
-package com.seogineer.sessionauthspringsecuritythymleaf.member.dto;
+package com.seogineer.sessionauthspringsecuritythymeleaf.member.dto;
 
-import com.seogineer.sessionauthspringsecuritythymleaf.member.domain.Role;
+import com.seogineer.sessionauthspringsecuritythymeleaf.member.domain.Role;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -1,4 +1,4 @@
-package com.seogineer.sessionauthspringsecuritythymleaf.member.domain;
+package com.seogineer.sessionauthspringsecuritythymeleaf.member.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
